@@ -1,0 +1,946 @@
+@font-face {
+    font-family: Aachen BT;
+    src: url(aachenbt.ttf);
+}
+
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #1d1d23;
+    overflow-x: hidden;
+}
+
+/* 
+    navbar
+*/
+
+#myNavbar {
+    background-color: transparent;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#myNavbar .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#myNavbar .left-nav {
+    width: 33%;
+    text-align: center;
+}
+
+#myNavbar .center-nav {
+    width: 33%;
+    text-align: center;
+}
+
+#myNavbar .right-nav {
+    width: 33%;
+    text-align: center;
+}
+
+#myNavbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#myNavbar ul li {
+    display: inline-block;
+}
+
+#myNavbar ul li a {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+#myNavbar ul li a:hover,
+#myNavbar ul li a.active {
+    color: #e9a438;
+}
+
+
+@media screen and (max-width: 1199px) {
+    #myNavbar ul li a {
+        padding: 8px 8px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #myNavbar .left-nav {
+        width: 50%;
+        order: 1;
+        text-align: right;
+    }
+
+    #myNavbar .center-nav {
+        width: 100%;
+        order: 0;
+    }
+
+    #myNavbar .right-nav {
+        width: 50%;
+        order: 2;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #myNavbar .left-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #myNavbar .center-nav {
+        width: 100%;
+    }
+
+    #myNavbar .right-nav {
+        width: 100%;
+        padding-top: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #myNavbar ul li a {
+        padding: 6px 8px;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {
+
+    #myNavbar ul li a {
+        padding: 5px 6px;
+    }
+
+}
+
+
+
+/* 
+    section 1
+*/
+
+#section1 {
+    background-image: url(../img/section1-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+#section1 .heading-main {
+    font-size: 67px;
+    letter-spacing: 1px;
+    color: #e58f00;
+    font-family: "Aachen BT";
+    margin-bottom: 1.5rem;
+}
+
+#section1 .para-main {
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    margin-bottom: 2rem;
+}
+
+#section1 .btn-main {
+    border-radius: 5px;
+    background-color: #e58f00;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #28282d;
+    font-family: "Aachen BT";
+    border: 0;
+    outline: 0;
+    height: 70px;
+    width: 200px;
+}
+
+
+@media screen and (max-width: 1399px) {
+    #section1 .heading-main {
+        font-size: 60px;
+    }
+
+    #section1 .para-main {
+        font-size: 21px;
+    }
+
+    #section1 .btn-main {
+        font-size: 21px;
+        height: 60px;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #section1 .heading-main {
+        font-size: 50px;
+    }
+
+    #section1 .para-main {
+        font-size: 19px;
+    }
+
+    #section1 .btn-main {
+        font-size: 19px;
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #section1 .heading-main {
+        font-size: 35px;
+    }
+
+    #section1 .para-main {
+        font-size: 16px;
+    }
+
+    #section1 .btn-main {
+        font-size: 16px;
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #section1 div.container {
+        padding-top: 1rem;
+    }
+
+    #section1 .heading-main {
+        font-size: 35px;
+    }
+
+    #section1 .para-main {
+        font-size: 16px;
+    }
+
+    #section1 .btn-main {
+        font-size: 16px;
+        height: 50px;
+        width: 150px;
+    }
+}
+
+
+
+@media screen and (max-width: 575px) {
+    #section1 {
+        padding-bottom: 3rem;
+    }
+
+    #section1 .img-main {
+        max-width: 300px;
+    }
+
+    #section1 .heading-main br {
+        display: none;
+    }
+
+    #section1 .heading-main {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #section1 .para-main {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #section1 .btn-main {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* 
+    section 2
+*/
+
+
+#section2 .heading-main {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    margin-bottom: 1.5rem;
+}
+
+#section2 .para-main {
+    font-size: 33px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+}
+
+@media screen and (max-width: 1399px) {
+
+    #section2 .heading-main {
+        font-size: 40px;
+    }
+
+    #section2 .para-main {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    #section2 .heading-main {
+        font-size: 35px;
+    }
+
+    #section2 .para-main {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #section2 .heading-main {
+        font-size: 30px;
+    }
+
+    #section2 .para-main {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #section2 .heading-main {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+
+    #section2 .para-main {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #section2 .img-main {
+        max-width: 300px;
+    }
+
+    #section2 .heading-main {
+        text-align: center;
+    }
+
+    #section2 .para-main {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* 
+    section 3
+*/
+
+
+#section3 {
+    position: relative;
+}
+
+#section3 img {
+    width: 100%;
+    height: auto;
+}
+
+#section3 .main {
+    width: 42%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+#section3 .heading-main {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+}
+
+#section3 .para-main {
+    font-size: 33px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+}
+
+
+@media screen and (max-width: 1299px) {
+
+    #section3 .main {
+        width: 50%;
+        left: 5%;
+    }
+
+
+    #section3 .heading-main {
+        font-size: 40px;
+    }
+
+    #section3 .para-main {
+        font-size: 29px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    #section3 .heading-main {
+        font-size: 35px;
+    }
+
+    #section3 .para-main {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #section3 .main {
+        top: 17%;
+    }
+
+    #section3 .heading-main {
+        font-size: 35px;
+    }
+
+    #section3 .para-main {
+        font-size: 21px;
+    }
+
+}
+
+
+@media screen and (max-width: 680px) {
+    #section3 .main {
+        top: 20%;
+    }
+
+    #section3 .heading-main {
+        font-size: 30px;
+    }
+
+    #section3 .para-main {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 575px) {
+    #section3 .main {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+
+
+/* 
+    section4
+*/
+
+#section4 .heading-main {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    text-align: center;
+}
+
+#section4 img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    #section4 .heading-main {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #section4 .heading-main {
+        font-size: 30px;
+    }
+}
+
+
+
+
+/* 
+    section5
+*/
+
+#section5 {
+    position: relative;
+}
+
+#section5 img {
+    width: 100%;
+    height: auto;
+}
+
+#section5 .box {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(29, 29, 35, 0.8);
+    border: 10px solid #e58f00;
+    padding: 3rem;
+}
+
+#section5 .heading-main {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#section5 .para-main {
+    font-size: 33px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    text-align: center;
+}
+
+
+@media screen and (max-width:1399px) {
+    #section5 .heading-main {
+        font-size: 45px;
+    }
+
+    #section5 .para-main {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #section5 .heading-main {
+        font-size: 40px;
+    }
+
+    #section5 .para-main {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #section5 .box {
+        width: 60%;
+        padding: 1.5rem;
+    }
+
+    #section5 .heading-main {
+        font-size: 35px;
+    }
+
+    #section5 .para-main {
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    #section5 .box {
+        width: 70%;
+        padding: 1rem;
+    }
+
+    #section5 .heading-main {
+        font-size: 30px;
+    }
+
+    #section5 .para-main {
+        font-size: 21px;
+    }
+}
+
+
+@media screen and (max-width:575px) {
+    #section5 .box {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    #section5 .heading-main {
+        font-size: 25px;
+    }
+
+    #section5 .para-main {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    #section5 .box {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    #section5 img {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+
+
+/* 
+    section 6
+*/
+
+#section6 .heading-main {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    margin-bottom: 3rem;
+}
+
+#section6 .card-title {
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #e58f00;
+    font-family: "Aachen BT";
+    margin: 1.5rem 0rem;
+}
+
+#section6 .card-text {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+    margin-bottom: 1.5rem;
+}
+
+#section6 .sub-tittle {
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #e58f00;
+    font-family: "Aachen BT";
+}
+
+
+@media screen and (max-width: 991px) {
+    #section6 .card-title {
+        font-size: 25px;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #section6 .card-text {
+        margin-bottom: 1rem;
+    }
+
+    #section6 .heading-main {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #section6 .heading-main {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #section6 .heading-main {
+        font-size: 30px;
+    }
+}
+
+
+
+/* 
+    section 7
+*/
+
+#section7 {
+    height: 500px;
+    background-color: #e58f00;
+    display: flex;
+    align-items: center;
+}
+
+#section7 .left {
+    height: 504px;
+    width: 40%;
+    position: relative;
+}
+
+#section7 .left img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#section7 .right {
+    width: 60%;
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+#section7 .heading-main {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+}
+
+#section7 .para-main {
+    font-size: 33px;
+    color: #ffffff;
+    font-family: "Aachen BT";
+}
+
+
+@media screen and (max-width:1399px) {
+    #section7 {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    #section7 {
+        height: 400px;
+    }
+
+    #section7 .heading-main {
+        font-size: 40px;
+    }
+
+    #section7 .para-main {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #section7 {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #section7 {
+        height: 300px;
+    }
+
+    #section7 .heading-main {
+        font-size: 35px;
+    }
+
+    #section7 .para-main {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #section7 {
+        height: 250px;
+    }
+
+    #section7 .right {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #section7 {
+        height: 220px;
+    }
+
+    #section7 .right {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #section7 .heading-main {
+        font-size: 30px;
+    }
+
+    #section7 .para-main {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    #section7 {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #section7 {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    #section7 .left {
+        height: auto;
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    #section7 .left img {
+        width: 50%;
+        position: static;
+        left: 0;
+        top: 0;
+        transform: translateY(0px);
+    }
+
+    #section7 .right {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        text-align: justify;
+    }
+}
+
+
+
+
+
+
+/* 
+    footer
+*/
+
+footer {
+    background-color: #34343b;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+footer .footer-logo>img {
+    max-width: 350px;
+}
+
+footer .footer-links {
+    margin: 1.5rem 0;
+}
+
+footer .footer-links>a {
+    display: inline-block;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #e7e6e6;
+    font-weight: 700;
+    font-family: "Aachen BT";
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+footer .footer-icons>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #e7e6e6;
+    color: #34343b;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 27px;
+    margin: 0 0.5rem;
+}
+
+.footer-links>a:hover {
+    color: #e58f00;
+}
+
+
+.footer-icons>a:hover {
+    background-color: #e58f00;
+    color: #e7e6e6;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    footer .footer-links>a {
+        padding: 10px 12px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    footer .footer-links>a {
+        font-size: 19px;
+        padding: 10px 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+    footer .footer-links>a {
+        font-size: 16px;
+    }
+
+    footer .footer-logo>img {
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    footer .footer-links>a {
+        display: block;
+    }
+
+    footer .footer-logo>img {
+        max-width: 250px;
+    }
+
+}
